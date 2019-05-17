@@ -1,0 +1,30 @@
+<div class="card">
+          
+        <a href="/home" class="btn btn-secondary">HOME</a>
+                       
+</div>
+<br/>
+<br/>
+<div class="card">            
+
+        <% for(var i=0;i<Items.length;i++){ %>
+        <section>
+        <ul class="list-group"  >
+                        <div class="card-title" style="background: yellow"><%= Items[i].topic  %> </div>
+                        <li class="list-group-item"><%= Items[i].title%> </li>
+                        <li class="list-group-item"><%= Items[i].authorn %></li>
+                        <li class="list-group-item"><%= Items[i].description%></li>
+                        <br/>
+                        <form action="/home/createblog/<%= Items[i]._id%>" method="get">
+                                <button type="submit" class="btn btn-outline-primary">UPDATE</button>
+                                </form>
+                                <form action="/home/createblog/<%= Items[i]._id%>?_method=DELETE" method="post">
+                                        <button type="submit" class="btn btn-outline-primary">DELETE</button>
+                                </form>
+                      </ul>
+                      <br/>
+                      <br/>
+                      </section>
+                      <% }; %>
+
+</div>

@@ -1,0 +1,20 @@
+/*{call back hell is writing function inside functions or in other words it is nested asychronus calls*/
+/*that populates</h1>*/
+
+
+
+
+/*we can avoid it using PROMISES*/
+/*cause waits for async to send data and .then executes else .catch executes*/
+/*and we can use error first approach also*/
+
+
+
+/*first argument to callback handler in node is error handler object and if no error the null or undeined*/
+
+
+
+/*ways to write async codes*/
+/*1.callbacks*/
+ /*2.Promises*/
+  /*3.*/

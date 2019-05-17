@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update blog</title>
+
+</head>
+<body>
+<form action="/home/createblog/<%= data._id%>?_method=PUT" method="post">
+    <div class="form-group">
+      <label for="topic">Topic</label>
+      <input  class="form-control" id="topic" aria-describedby="topicHelp" name="topic" value="<%= data.topic%>" >
+      <small id="topicHelp" class="form-text text-muted">keep it small</small>
+    </div>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input  class="form-control" id="title" name="title" value="<%= data.title%>">
+    </div>
+    <div class="form-group">
+            <label for="author">Author</label>
+            <input  class="form-control" id="author" name="authorn" value="<%= data.authorn%>">
+     </div>
+     <div class="form-group">
+            <label for="description">description</label>
+            <textarea class="form-control" id="description" name="description" rows="3">"<%= data.description%></textarea>
+          </div>
+    <button type="submit" class="btn btn-primary">EDIT</button>
+  </form>
+
+
+</body>
